@@ -1,4 +1,5 @@
 import React from 'react';
+import Messages from './Messages';
 
 const Mailbox = (props) => {
     const unreadMessages = props.unreadMessages
@@ -10,14 +11,7 @@ const Mailbox = (props) => {
         {unreadMessages.length > 0 && (
             <h2>You have {unreadMessages.length} unread messages.</h2>
         )}
-        {/* <ul>{
-            unreadMessages.map((message) => (
-                <li>
-                {message}
-                </li>
-            ))
-        }
-        </ul> */}
+        <Messages unreadMessages={unreadMessages}/>
         </div>
     );
 }
