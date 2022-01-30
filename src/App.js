@@ -29,6 +29,7 @@ const App = () => {
   return (
     <div className="App">
       <Greeting isLoggedIn={isLoggedIn} />
+      <p>The user is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in.</p>
       {button}
       {mailbox}
     </div>
